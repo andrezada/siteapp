@@ -1,0 +1,160 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #fff; 
+  color: #181818;   
+}
+
+header {
+  background: #181818;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  padding: 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px; 
+  margin: 0 auto;
+  padding: 18px 40px 18px 40px; 
+  position: relative;
+}
+
+.logo {
+  width: 200px; 
+  height: auto;
+  margin-right: 40px;
+  display: block;
+  filter: drop-shadow(0 0 24px #4f8cff55);
+  transition: filter 0.2s;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.3rem; 
+  padding: 10px 22px;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav ul li a:hover {
+  background: #fff;
+  color: #181818;
+}
+
+.titulo-centralizado {
+  flex: 1;
+  text-align: center;
+  font-size: 2.7rem; 
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.sobre, .funcoes, .extra {
+  background: #fff;               
+  border-radius: 22px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.08);
+  padding: 48px 40px 40px 40px;    
+  margin-bottom: 40px;
+  color: #181818;                  
+  max-width: 1100px;               
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sobre h2, .funcoes h2, .extra h2 {
+  color: #181818;
+  font-size: 2rem;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.sobre p, .extra p, .funcoes ul {
+  color: #222;
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.funcoes ul {
+  list-style: disc inside;
+  padding-left: 0;
+  color: #000000;
+  font-size: 1.05rem;
+}
+
+.funcoes ul li {
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+footer {
+  background: #181818;
+  color: #aaa;
+  text-align: center;
+  padding: 18px 0 12px 0;
+  font-size: 1rem;
+  border-top: 1px solid #222;
+  margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+  .header-content {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px 8px 12px 8px;
+  }
+  .logo {
+    margin: 0 auto 12px auto;
+    width: 90px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+  }
+  .titulo-centralizado {
+    position: static;
+    transform: none;
+    font-size: 1.5rem;
+    margin-top: 12px;
+    text-align: center;
+    pointer-events: auto;
+  }
+}
