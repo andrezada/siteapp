@@ -121,7 +121,7 @@ main {
   .team {
     flex-direction: column;
     align-items: center;
-    margin-right: 15px;
+    margin-right: 17px;
   }
   .member {
     width: 90%;
