@@ -6,11 +6,22 @@ body {
   color: #181818;   
 }
 
+/* Cabeçalho e rodape*/
 header {
   background: #181818;
   color: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   padding: 0;
+}
+
+footer {
+  background: #181818;
+  color: #c7c7c7;
+  text-align: center;
+  padding: 18px 0 12px 0;
+  font-size: 1rem;
+  border-top: 1px solid #222;
+  margin-top: 40px;
 }
 
  .header-content {
@@ -33,6 +44,7 @@ header {
   transition: filter 0.2s;
 }
 
+/* menu de navegação*/
 nav {
   margin-left: auto;
 }
@@ -57,7 +69,7 @@ nav ul li a {
   font-size: 1.3rem; 
   padding: 10px 22px;
   border-radius: 8px;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.7s, color 0.7s, transform 3s;
 }
 
 nav ul li a:hover {
@@ -80,7 +92,7 @@ nav ul li a:hover {
   pointer-events: none;
   z-index: 0;
 }
-
+/* Faq para arrumar dps*/
 main {
   max-width: 900px;
   margin: 40px auto;
@@ -99,8 +111,9 @@ main {
   font-size: 1.08rem;
   color: #333;
 }
+/* caixinhas*/
 
-.sobre, .funcoes, .extra {
+.sobre, .funcoes, .extra, .OqEh{
   background: #fff;               
   border-radius: 22px;
   box-shadow: 0 6px 32px rgba(0,0,0,0.08);
@@ -112,6 +125,7 @@ main {
   margin-right: auto;
 }
 
+/* titulo das caixas */
 .sobre h2, .funcoes h2, .extra h2 {
   color: #181818;
   font-size: 2rem;
@@ -119,12 +133,14 @@ main {
   font-weight: 700;
 }
 
+/* textos das caixas*/
 .sobre p, .extra p, .funcoes ul {
   color: #222;
   font-size: 1.15rem;
   margin: 0;
 }
 
+/* texto da lista*/
 .funcoes ul {
   list-style: disc inside;
   padding-left: 0;
@@ -137,16 +153,8 @@ main {
   padding-left: 5px;
 }
 
-footer {
-  background: #181818;
-  color: #c7c7c7;
-  text-align: center;
-  padding: 18px 0 12px 0;
-  font-size: 1rem;
-  border-top: 1px solid #222;
-  margin-top: 40px;
-}
 
+/* mudança para telas pequenas*/
 @media (max-width: 1178px) {
 
   .titulo-centralizado {
