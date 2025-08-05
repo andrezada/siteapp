@@ -67,7 +67,7 @@ header p {
 /* Area do como usar*/
 
 .comousar{
-    background: #fff;               
+  background: #fff;               
   border-radius: 22px;
   box-shadow: 0 6px 32px rgba(0, 0, 0, 0.197);
   padding: 28px 20px 20px 10px;    
@@ -79,7 +79,7 @@ header p {
   margin-top: 5%;
   display: flex;
   justify-content: center;
-    text-align: center;
+  text-align: center;
 }
 .acesso h1 {
   margin: 10px 0 5px 0;
@@ -117,4 +117,40 @@ header p {
   background: #181818;
   color: #fff;
   box-shadow: 5px 5px 10px #000000;
+}
+/* Area de como usar */
+
+.tutorial {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.197);
+  padding: 28px 20px 20px 28px;
+  margin-bottom: 40px;
+  color: #181818;
+  max-width: 1100px;
+  margin: 5% auto 40px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.tutorial img {
+  width: 300px;
+  border-radius: 22px;
+  object-fit: cover;
+  margin-left: 32px;
+  display: block;
+  align-self: flex-start;
+}
+.textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  gap: 1px;
+}
+
+.textos h1{
+  margin-left: 250px;
 }
