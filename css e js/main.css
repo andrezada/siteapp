@@ -161,6 +161,7 @@ main {
     display: flex;
     justify-content: center;
     font-size: 25px;
+    margin-left: 29px;
   }
   .logo{
     width: 100px;
@@ -221,3 +222,4 @@ main {
   }
 
 }
+
