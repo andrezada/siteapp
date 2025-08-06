@@ -158,7 +158,14 @@ main {
 @media (max-width: 1178px) {
 
   .titulo-centralizado {
-    display: none;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
+  .logo{
+    width: 100px;
+    margin-top: -15px;
+    margin-left: -20px;
   }
   nav ul {
     gap: 50px;
@@ -166,7 +173,7 @@ main {
     flex-direction: column;
     background: #181818;
     position: absolute;
-    top: 70px;
+    top: 90px;
     right: 20px;
     width: 200px;
     border-radius: 12px;
@@ -177,7 +184,6 @@ main {
 
   nav ul.active {
     display: flex;
-    height: 120%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
