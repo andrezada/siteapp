@@ -160,7 +160,7 @@ main {
   .titulo-centralizado {
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    font-size: 25px;
   }
   .logo{
     width: 100px;
@@ -219,4 +219,5 @@ main {
     transform:  rotate(-45deg);
     transform-origin: left;
   }
+
 }
