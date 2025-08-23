@@ -111,12 +111,12 @@ header p {
 }
 /*TESTE DO FRONT END*/
 .frontapp{
-  background: #181818;               
+  background: white;               
   border-radius: 22px;
   box-shadow: 0 6px 32px 20px rgba(0, 0, 0, 0.197);
   padding: 28px 20px 20px 10px;    
   margin-bottom: 40px;
-  color: white;                  
+  color: black;                  
   max-width: 360px;             
   margin-left: 80px;
   margin-right: 100px;
@@ -127,7 +127,8 @@ header p {
 }
 
 .dispositivos{
-  background: linear-gradient(90deg, rgb(17, 17, 17), rgb(17, 17, 17), white);               
+  background: url("../imagens/section 1.png") no-repeat center center;
+  background-size: cover;
   border-radius: 22px;
   box-shadow: 0 6px 18px 10px  rgba(0, 0, 0, 0.197);
   padding: 28px 20px 20px 10px;    
@@ -154,37 +155,17 @@ header p {
 .teste img{
   width: 130px;
   padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .alinhar{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
-
-.linksite{
-  margin-top: 28px;
-  margin-bottom: 30px;
-  margin-left: 40px;
-  margin-right: 40px;
-  padding: 1px -100px;
-  background: #181818;
-  color: white;
-  font-weight: 700;
-  font-size: 2rem;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  transition-duration: 1s;
+.coluna{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-  .linksite:hover {
-    border: none;
-  background: #fff;
-  color: #181818;
-  box-shadow: 0px 0px 10px 3px #fff;
-  }
 
   /* CELULAR E COMPUTADOR*/
   .dispositivos img{
