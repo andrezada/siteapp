@@ -111,12 +111,12 @@ header p {
 }
 /*TESTE DO FRONT END*/
 .frontapp{
-  background: white;               
+  background: radial-gradient(circle at center, #797373 0%, #292727 90%);              
   border-radius: 22px;
   box-shadow: 0 6px 32px 20px rgba(0, 0, 0, 0.197);
   padding: 28px 20px 20px 10px;    
   margin-bottom: 40px;
-  color: black;                  
+  color: white;                  
   max-width: 360px;             
   margin-left: 80px;
   margin-right: 100px;
@@ -127,8 +127,10 @@ header p {
 }
 
 .dispositivos{
-  background: url("../imagens/section 1.png") no-repeat center center;
-  background-size: cover;
+background: radial-gradient(ellipse at center, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0) 60%), #2b2b2b;
+
+  /*background: url("../imagens/section 1.png") no-repeat center center;
+  background-size: cover;*/
   border-radius: 22px;
   box-shadow: 0 6px 18px 10px  rgba(0, 0, 0, 0.197);
   padding: 28px 20px 20px 10px;    
@@ -205,7 +207,6 @@ header p {
     transition-delay: 1s; /* espera o fade acabar pra esconder */
   }
 }
-
 
 /* Area de como usar */
 
