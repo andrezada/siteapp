@@ -3,8 +3,41 @@ body {
   padding: 0;
   font-family: 'Montserrat', Arial, sans-serif;
   background: #fff; 
-  color: #181818;   
+  color: #181818;  
 }
+
+.login{
+  position: absolute;
+  left: 30%;
+  visibility: hidden;
+
+  width: 600px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #181818;
+  color: #fff;
+}
+.login form{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+}
+
+.login i{
+  position: absolute;
+  top: 16px;
+  right: 26px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+
+
+
 
 /* Cabeçalho e rodape*/
 header {
@@ -43,26 +76,38 @@ footer {
   filter: drop-shadow(0 0 24px #4f8cff55);
   transition: filter 0.2s;
 }
+.conta{
+  font-size: 2.6rem;
+  font-weight: 700;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+  bottom: 160px;
+  left: 78%;
+}
+
 
 /* menu de navegação*/
 nav {
   margin-left: auto;
 }
 
-nav ul {
+.menuprincipal ul {
   list-style: none;
   padding: 0;
   margin: 0 0 20px 0;
   display: flex;
   gap: 32px;
   align-items: flex-end;
+  cursor: pointer;
 }
 
-nav ul li {
+.menuprincipal ul li {
   display: inline;
 }
 
-nav ul li a {
+.menuprincipal ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: 700;
@@ -76,6 +121,51 @@ nav ul li a:hover {
   background: #fff;
   color: #181818;
 }
+
+
+/* ferramentas*/
+.ferramentas {
+  position: fixed;
+  top: 30%;
+  right: 10%;
+  z-index: 1000;
+  visibility: hidden;
+}
+
+.ferramentas ul {
+  list-style: none;
+  cursor: pointer;
+  background-color: #fff;
+  width: fit-content;
+  height: 150px;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 12px 6px #0000006b;
+}
+
+.ferramentas ul li {
+  margin-left: -30px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.ferramentas ul li a {
+  color: #181818;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem; 
+  padding: 6px 14px;
+  border-radius: 8px;
+  transition: background 0.7s, color 0.7s, transform 3s;
+}
+.ferramentas ul li a:hover {
+  background: #181818;
+  color: #fff ;
+}
+
 
 .titulo-centralizado {
   flex: 1;
@@ -168,7 +258,13 @@ main {
     margin-top: -15px;
     margin-left: -20px;
   }
-  nav ul {
+  .conta{
+    display: flex;
+    font-size: 2.2rem;
+    bottom: 50px;
+    left: 40%;
+  }
+  .menuprincipal ul {
     gap: 50px;
     display: none;
     flex-direction: column;
@@ -183,7 +279,7 @@ main {
     z-index: 100;
   }
 
-  nav ul.active {
+  .menuprincipal ul.active {
     display: flex;
     justify-content: center;
     align-items: center;
