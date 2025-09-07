@@ -93,7 +93,7 @@ nav {
   margin-left: auto;
 }
 
-nav ul {
+.menuprincipal ul {
   list-style: none;
   padding: 0;
   margin: 0 0 20px 0;
@@ -103,11 +103,11 @@ nav ul {
   cursor: pointer;
 }
 
-nav ul li {
+.menuprincipal ul li {
   display: inline;
 }
 
-nav ul li a {
+.menuprincipal ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: 700;
@@ -121,11 +121,51 @@ nav ul li a:hover {
   background: #fff;
   color: #181818;
 }
+
+
 /* ferramentas*/
-.ferramentas ul li a {
-  font-size: 1rem; 
-  padding: 8px 16px;
+.ferramentas {
+  position: fixed;
+  top: 30%;
+  right: 10%;
+  z-index: 1000;
+  visibility: hidden;
 }
+
+.ferramentas ul {
+  list-style: none;
+  cursor: pointer;
+  background-color: #fff;
+  width: fit-content;
+  height: 150px;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 12px 6px #0000006b;
+}
+
+.ferramentas ul li {
+  margin-left: -30px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.ferramentas ul li a {
+  color: #181818;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem; 
+  padding: 6px 14px;
+  border-radius: 8px;
+  transition: background 0.7s, color 0.7s, transform 3s;
+}
+.ferramentas ul li a:hover {
+  background: #181818;
+  color: #fff ;
+}
+
 
 .titulo-centralizado {
   flex: 1;
@@ -224,7 +264,7 @@ main {
     bottom: 50px;
     left: 40%;
   }
-  nav ul {
+  .menuprincipal ul {
     gap: 50px;
     display: none;
     flex-direction: column;
@@ -239,7 +279,7 @@ main {
     z-index: 100;
   }
 
-  nav ul.active {
+  .menuprincipal ul.active {
     display: flex;
     justify-content: center;
     align-items: center;
