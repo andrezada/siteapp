@@ -1,16 +1,61 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', Arial, sans-serif;
-  background: #fff; 
-  color: #181818;   
+  font-family: "Montserrat", Arial, sans-serif;
+  background: #fff;
+  color: #181818;
+}
+
+/*login paizao*/
+.login {
+  position: fixed; /* fixa no centro da tela */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden; /* escondida por padrão */
+  opacity: 0;
+  width: 400px; /* menor que 600px para ficar melhor centralizado */
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #181818;
+  color: #fff;
+  padding: 24px;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000; /* garante que fique acima de outros elementos */
+}
+
+.login.active {
+  visibility: visible; /* quando ativa, torna visível */
+  opacity: 1;
+}
+
+/* Formulário interno */
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+/* Ícone de fechar */
+.login i {
+  position: absolute;
+  top: 16px;
+  right: 26px;
+  font-size: 40px;
+  cursor: pointer;
+  color: #fff;
 }
 
 /* Cabeçalho e rodape*/
 header {
   background: #181818;
   color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   padding: 0;
 }
 
@@ -24,7 +69,7 @@ footer {
   margin-top: 40px;
 }
 
- .header-content {
+.header-content {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -34,14 +79,24 @@ footer {
   position: relative;
   min-height: 80px;
 }
-  
+
 .logo {
-  width: 200px; 
+  width: 200px;
   height: auto;
   margin-right: 40px;
   display: block;
   filter: drop-shadow(0 0 24px #4f8cff55);
   transition: filter 0.2s;
+}
+.conta {
+  font-size: 2.6rem;
+  font-weight: 700;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+  bottom: 160px;
+  left: 78%;
 }
 
 /* menu de navegação*/
@@ -56,6 +111,7 @@ nav ul {
   display: flex;
   gap: 32px;
   align-items: flex-end;
+  cursor: pointer;
 }
 
 nav ul li {
@@ -66,7 +122,7 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.3rem; 
+  font-size: 1.3rem;
   padding: 10px 22px;
   border-radius: 8px;
   transition: background 0.7s, color 0.7s, transform 3s;
@@ -76,11 +132,16 @@ nav ul li a:hover {
   background: #fff;
   color: #181818;
 }
+/* ferramentas*/
+.ferramentas ul li a {
+  font-size: 1rem;
+  padding: 8px 16px;
+}
 
 .titulo-centralizado {
   flex: 1;
   text-align: center;
-  font-size: 3.1rem; 
+  font-size: 3.1rem;
   font-weight: 700;
   letter-spacing: 1px;
   margin: 0;
@@ -113,20 +174,25 @@ main {
 }
 /* caixinhas*/
 
-.sobre, .funcoes, .extra, .OqEh{
-  background: #fff;               
+.sobre,
+.funcoes,
+.extra,
+.OqEh {
+  background: #fff;
   border-radius: 22px;
-  box-shadow: 0 6px 32px rgba(0,0,0,0.08);
-  padding: 48px 40px 40px 40px;    
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.08);
+  padding: 48px 40px 40px 40px;
   margin-bottom: 40px;
-  color: #181818;                  
-  max-width: 1100px;               
+  color: #181818;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* titulo das caixas */
-.sobre h2, .funcoes h2, .extra h2 {
+.sobre h2,
+.funcoes h2,
+.extra h2 {
   color: #181818;
   font-size: 2rem;
   margin-bottom: 18px;
@@ -134,7 +200,9 @@ main {
 }
 
 /* textos das caixas*/
-.sobre p, .extra p, .funcoes ul {
+.sobre p,
+.extra p,
+.funcoes ul {
   color: #222;
   font-size: 1.15rem;
   margin: 0;
@@ -153,20 +221,24 @@ main {
   padding-left: 5px;
 }
 
-
 /* mudança para telas pequenas*/
 @media (max-width: 1178px) {
-
   .titulo-centralizado {
     display: flex;
     justify-content: center;
     font-size: 25px;
     margin-left: 29px;
   }
-  .logo{
+  .logo {
     width: 100px;
     margin-top: -15px;
     margin-left: -20px;
+  }
+  .conta {
+    display: flex;
+    font-size: 2.2rem;
+    bottom: 50px;
+    left: 40%;
   }
   nav ul {
     gap: 50px;
@@ -178,7 +250,7 @@ main {
     right: 20px;
     width: 200px;
     border-radius: 12px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
     padding: 20px 0;
     z-index: 100;
   }
@@ -214,10 +286,10 @@ main {
     transform-origin: left;
   }
   .hamburger.active span:nth-child(2) {
-  background: transparent;
+    background: transparent;
   }
   .hamburger.active span:nth-child(3) {
-    transform:  rotate(-45deg);
+    transform: rotate(-45deg);
     transform-origin: left;
   }
 }
