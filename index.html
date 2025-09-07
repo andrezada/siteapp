@@ -7,17 +7,20 @@
   <link rel="stylesheet" href="css e js/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="imagens/icone da aba.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
     <div class="header-content">
       <img src="imagens/logoappsemfundo.png" alt="logo do app" class="logo">
+     <div class="conta"><i class="fa-solid fa-circle-user"></i></div>
       <nav id="main-nav">
         <ul>
           <li><a href="teste.html">Teste</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="equipe.html">Equipe</a></li>
-          <li><a href="https://www.instagram.com/letmedoit_ifpi/" target="_blank">Contato</a></li>
+          <li><a>ferramentas</a></li>
         </ul>
       </nav>
        <div class="hamburger" id="hamburger-menu">
@@ -25,9 +28,35 @@
           <span></span>
         <span></span>
       </div>
-      <h1 class="titulo-centralizado">Let Me do It!</h1>
-    </div>
+      <h1 class="titulo-centralizado">Let Me do It!</h1> 
+     
+    </div> 
   </header>
+
+
+<!--login-->
+<div class="login">
+  <h2>Login</h2> <i class="fa-solid fa-xmark" id="fechar"></i>
+  <form>
+    <label for="username">Usuário:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit" disabled>Entrar</button>
+    <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+  </form>
+</div>
+
+<!--ferramentas-->
+<nav class="ferramentas">
+  <ul>
+    <li><a href="#">enviar gabarito</a></li>
+    <li><a href="#">corrigir gabarito</a></li>
+    <li><a href="#">planilha</a></li>
+  </ul>
+</nav>
 
   <main>
     <section class="sobre" id="sobre">

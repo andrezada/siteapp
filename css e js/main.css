@@ -3,8 +3,41 @@ body {
   padding: 0;
   font-family: 'Montserrat', Arial, sans-serif;
   background: #fff; 
-  color: #181818;   
+  color: #181818;  
 }
+
+.login{
+  position: absolute;
+  left: 30%;
+  visibility: hidden;
+
+  width: 600px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #181818;
+  color: #fff;
+}
+.login form{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+}
+
+.login i{
+  position: absolute;
+  top: 16px;
+  right: 26px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+
+
+
 
 /* Cabeçalho e rodape*/
 header {
@@ -43,6 +76,17 @@ footer {
   filter: drop-shadow(0 0 24px #4f8cff55);
   transition: filter 0.2s;
 }
+.conta{
+  font-size: 2.6rem;
+  font-weight: 700;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+  bottom: 160px;
+  left: 78%;
+}
+
 
 /* menu de navegação*/
 nav {
@@ -56,6 +100,7 @@ nav ul {
   display: flex;
   gap: 32px;
   align-items: flex-end;
+  cursor: pointer;
 }
 
 nav ul li {
@@ -75,6 +120,11 @@ nav ul li a {
 nav ul li a:hover {
   background: #fff;
   color: #181818;
+}
+/* ferramentas*/
+.ferramentas ul li a {
+  font-size: 1rem; 
+  padding: 8px 16px;
 }
 
 .titulo-centralizado {
@@ -167,6 +217,12 @@ main {
     width: 100px;
     margin-top: -15px;
     margin-left: -20px;
+  }
+  .conta{
+    display: flex;
+    font-size: 2.2rem;
+    bottom: 50px;
+    left: 40%;
   }
   nav ul {
     gap: 50px;
