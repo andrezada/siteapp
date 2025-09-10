@@ -1,0 +1,48 @@
+.menulateral{
+    background-color: #181818;
+    height: 100vh;
+    width: 25%;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    padding-left: 15px;
+}
+.conta i{
+    font-size: 70px;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+.navbar{
+    margin-top: 70px;
+}
+
+.gabaritos, .planilhas, .turmas{
+    margin-top: 4em;
+    border-bottom: 2px solid blue;
+    cursor: pointer;
+}
+
+button{
+    color: #fff;
+    font-size: 60px;
+    background-color: #181818;
+    z-index: 1001;
+    position: absolute;
+    border: none;
+    border-radius: 20px;
+    top: 20px;
+    right: -50px;
+    visibility: hidden;
+    rotate: 180deg;
+}
+
+
+@media (max-width: 1100px) {
+    button{
+        visibility: visible;
+    }
+
+}

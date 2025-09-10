@@ -39,22 +39,24 @@
   <h2>Login</h2> <i class="fa-solid fa-xmark" id="fechar"></i>
   <form>
     <label for="username">Usuário:</label>
-    <input type="text" id="username" name="username" required>
+    <input type="email" id="username" name="username" required>
 
     <label for="password">Senha:</label>
     <input type="password" id="password" name="password" required>
-
-    <button type="submit" disabled>Entrar</button>
+      <button type="submit" id="butao-submit" disabled onclick="entrarConta()">
+        Entrar
+      </button>
     <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+    <p id="newsletter"></p>
   </form>
 </div>
 
 <!--ferramentas-->
 <nav class="ferramentas">
   <ul>
-    <li><a href="#">enviar gabarito</a></li>
-    <li><a href="#">corrigir gabarito</a></li>
-    <li><a href="#">planilha</a></li>
+    <li><a href="ferramentas.html" target="_blank">enviar gabarito</a></li>
+    <li><a href="ferramentas.html" target="_blank">corrigir gabarito</a></li>
+    <li><a href="ferramentas.html" target="_blank">planilha</a></li>
   </ul>
 </nav>
 
@@ -111,5 +113,5 @@
     <p>Made by: Rocking chair</p>
   </footer>
 
-  <script src="css e js/menu.js"></script>
+  <script type="module" src="css e js/js/main.js"></script>
 </html>
