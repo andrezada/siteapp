@@ -1,0 +1,269 @@
+
+
+/* expecificações gerais*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #fff; 
+  color: #181818;
+}
+/* Header*/
+header {
+  background: #181818;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px 30px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+header img {
+    display: flex;
+  width: 150px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+header h1 {
+  margin: 10px 0 5px 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.voltar{
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 28px;
+  background: #181818;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.voltar:hover {
+  background: white;
+  color: #000000;
+}
+
+/* Area do como usar*/
+
+.comousar{
+  background: #fff;               
+  border-radius: 22px;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.197);
+  padding: 28px 20px 20px 10px;    
+  margin-bottom: 40px;
+  color: #181818;                  
+  max-width: 1100px;               
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.acesso h1 {
+  margin: 10px 0 5px 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.acesso p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.acesso img{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.canva{
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 28px;
+  background: #fff;
+  color: #181818;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition-duration: 1s;
+}
+
+.canva:hover {
+  background: #181818;
+  color: #fff;
+  box-shadow: 5px 5px 10px #000000;
+}
+/*TESTE DO FRONT END*/
+.frontapp{
+  background: radial-gradient(circle at center, #797373 0%, #292727 90%);              
+  border-radius: 22px;
+  box-shadow: 0 6px 32px 20px rgba(0, 0, 0, 0.197);
+  padding: 28px 20px 20px 10px;    
+  margin-bottom: 40px;
+  color: white;                  
+  max-width: 360px;             
+  margin-left: 80px;
+  margin-right: 100px;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.dispositivos{
+background: radial-gradient(ellipse at center, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0) 60%), #2b2b2b;
+
+  /*background: url("../imagens/section 1.png") no-repeat center center;
+  background-size: cover;*/
+  border-radius: 22px;
+  box-shadow: 0 6px 18px 10px  rgba(0, 0, 0, 0.197);
+  padding: 28px 20px 20px 10px;    
+  margin-bottom: 40px;
+  color: white;                  
+  max-width:600px;               
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.teste h1 {
+  margin: 10px 0 5px 0;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.teste p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.teste img{
+  width: 130px;
+  padding-top: 15px;
+}
+
+.alinhar{
+  display: flex;
+  justify-content: center;
+}
+.coluna{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  /* CELULAR E COMPUTADOR*/
+  .dispositivos img{
+    width: 300px;
+    object-fit: cover;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+  transition: opacity 1s ease-in-out, visibility 0s linear 1s; /* esconde de fato depois do fade */
+  animation: crossfade 6s infinite;
+  }
+  .dispositivos{
+    margin-top: 60px;
+    margin-right: 40px;
+    overflow: hidden;
+  }
+  .dispositivos img.computador {
+    position: relative;
+    animation-delay: 3s;
+  }
+  .celular {
+    position: relative;
+  }
+  @keyframes crossfade {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  10%, 45% {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s; /* mostra logo */
+  }
+  55%, 100% {
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 1s; /* espera o fade acabar pra esconder */
+  }
+}
+
+/* Area de como usar */
+
+.tutorial {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.197);
+  padding: 28px 20px 20px 28px;
+  margin-bottom: 40px;
+  color: #181818;
+  max-width: 1100px;
+  margin: 5% auto 40px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.tutorial img {
+  width: 300px;
+  border-radius: 22px;
+  object-fit: cover;
+  margin-left: 32px;
+  display: block;
+  align-self: flex-start;
+}
+.textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  gap: 1px;
+}
+
+.textos h1{
+  margin-left: 250px;
+}
+
+/* responsividade*/
+@media (max-width: 1200px){
+  .logo{
+    display: none;
+  }
+  .comousar{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .frontapp{
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 560px;
+  }
+  .linksite{
+    max-width: 170px;
+  }
+  .dispositivos{
+    display: none;
+  }
+
+}
