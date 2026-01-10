@@ -89,6 +89,7 @@ footer {
   filter: drop-shadow(0 0 24px #4f8cff55);
   transition: filter 0.2s;
 }
+
 .conta{
   font-size: 2.6rem;
   font-weight: 700;
@@ -133,50 +134,6 @@ nav {
 nav ul li a:hover {
   background: #fff;
   color: #181818;
-}
-
-
-/* ferramentas*/
-.ferramentas {
-  position: fixed;
-  top: 30%;
-  right: 10%;
-  z-index: 1000;
-  visibility: hidden;
-}
-
-.ferramentas ul {
-  list-style: none;
-  cursor: pointer;
-  background-color: #fff;
-  width: fit-content;
-  height: 150px;
-  border-radius: 13px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0px 0px 12px 6px #0000006b;
-}
-
-.ferramentas ul li {
-  margin-left: -30px;
-  margin-right: 20px;
-  margin-top: 20px;
-}
-
-.ferramentas ul li a {
-  color: #181818;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1rem; 
-  padding: 6px 14px;
-  border-radius: 8px;
-  transition: background 0.7s, color 0.7s, transform 3s;
-}
-.ferramentas ul li a:hover {
-  background: #181818;
-  color: #fff ;
 }
 
 
